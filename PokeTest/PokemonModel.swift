@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Pokemon: Identifiable, Decodable {
     let pokeID = UUID()
@@ -23,6 +24,32 @@ struct Pokemon: Identifiable, Decodable {
         case type
         case description
     }
+    
+    var typeColor: Color {
+        switch type {
+        case "fire":
+            return Color(.systemRed)
+        case "poison":
+            return Color(.systemGreen)
+        case "water":
+            return Color(.systemTeal)
+        case "electric":
+            return Color(.systemYellow)
+        case "psychic":
+            return Color(.systemPurple)
+        case "normal":
+            return Color(.systemOrange)
+        case "ground":
+            return Color(.systemBrown)
+        case "flying":
+            return Color(.systemBlue)
+        case "fairy":
+            return Color(.systemPink)
+        default:
+            return Color(.systemIndigo)
+        }
+    }
+    
 }
 
 enum FetchError: Error {
