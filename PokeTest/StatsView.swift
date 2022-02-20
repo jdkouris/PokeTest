@@ -19,10 +19,22 @@ struct StatsView: View {
                 .cornerRadius(20)
             
             VStack(alignment: .leading, spacing: 30) {
-                StatView(pokemon: pokemon, statName: "Atk", statColor: .blue, statValue: pokemon.attack)
-                StatView(pokemon: pokemon, statName: "Def", statColor: .red, statValue: pokemon.defense)
-                StatView(pokemon: pokemon, statName: "Hgt", statColor: .teal, statValue: pokemon.height)
-                StatView(pokemon: pokemon, statName: "Wgt", statColor: .cyan, statValue: pokemon.weight)
+                StatView(pokemon: pokemon,
+                         statName: "Atk",
+                         statColor: .blue,
+                         statValue: pokemon.attack)
+                StatView(pokemon: pokemon,
+                         statName: "Def",
+                         statColor: .red,
+                         statValue: pokemon.defense)
+                StatView(pokemon: pokemon,
+                         statName: "Hgt",
+                         statColor: .teal,
+                         statValue: pokemon.height)
+                StatView(pokemon: pokemon,
+                         statName: "Wgt",
+                         statColor: .cyan,
+                         statValue: pokemon.weight)
             }
         }
     }
